@@ -1,0 +1,214 @@
+.footer
+   border-top: 1px solid rgba(255, 255, 255, 0.15)
+   padding-top: 35px
+   padding-bottom: 42px
+   &__form
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+   &__decription
+      margin: 0
+      font-size: 13px
+   &__search
+      display: none
+      position: relative
+      &-input
+         width: 100%
+         height: 50px
+         background-color: rgba(255, 255, 255,  0.16)
+         outline: none
+         border: 1px solid #fff
+         border-radius: 7px
+         padding-left: 20px
+         &::-moz-placeholder
+            color: #fff
+         &::-webkit-input-placeholder 
+            color: #fff
+      &-button
+         position: absolute
+         background: none
+         border: none
+         top: 15px
+         right: 15px
+   &__quantity
+      &-block
+         margin-top: 14px
+         display: flex
+         justify-content: start
+         align-items: center
+         overflow: hidden
+         border-radius: 7px
+      &-btn
+         cursor: pointer
+         display: inline-block
+         & input[type=radio]
+            display: none
+            &:checked + label
+               background: #fff
+               color: #000
+         &:nth-child(1) label
+            width: 90px
+         &:nth-child(n+2) label
+            border-left: 1px solid #fff
+         & label
+            display: flex
+            cursor: pointer
+            width: 56px
+            height: 56px
+            align-items: center
+            justify-content: center
+            user-select: none
+            background-color: rgba(255, 255, 255,  0.16)
+            font-size: 16px
+   &__square
+      &-block
+         display: flex
+         overflow: hidden
+         border-radius: 7px
+         margin-top: 14px
+   &__cost
+      &-block
+         display: flex
+         overflow: hidden
+         border-radius: 7px
+         margin-top: 14px
+   &__complex
+      &-block
+         display: flex
+         overflow: hidden
+         border-radius: 7px
+         margin-top: 14px
+         height: 56px
+         width: 270px
+   &__input
+      width: 135px
+      height: 56px
+      margin: 0
+      padding: 0
+      padding-left: 37px
+      border: 0
+      outline: none
+      background-color: rgba(255, 255, 255,  0.16)
+   &__wrap:nth-child(odd) input
+      border-right: 1px solid #fff
+   &__wrap 
+      position: relative
+      & span
+         position: absolute
+         top: 18px
+         left: 15px
+         font-size: 16px
+         color: rgba(255,255,255,0.4)
+   &__range
+      width: 164px
+      margin: auto
+   &__selects
+      position: relative
+      display: block
+      width: 100%
+      height: 64px
+      &:focus-within
+         & .footer__img
+            transform: rotate(90deg)
+   &__img
+      position: absolute
+      top: 23px
+      right: 25px
+      z-index: 1
+      transform: rotate(270deg)
+      transition: transform 1s
+   &__btn
+      cursor: pointer
+      margin-top: 28px
+      width: 224px
+      height: 56px
+      background-color: #D90002
+      border: none
+      outline: none
+      border-radius: 7px
+   &__filters
+      cursor: pointer
+      margin-left: 45px
+      margin-top: 28px
+      text-decoration: none
+      width: 127px
+      height: 56px
+      border: 1px solid rgba(255, 255, 255, 0.3)
+      border-radius: 7px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-left: 19px
+      padding-right: 9px
+      font-size: 13px
+      & img
+         margin-right: 14px
+
+//Стилизация выпадающего списка
+.select2
+   /*Изменение фонового цвета у выпадающего списка*/
+   &-dropdown
+      background: rgba(255, 255, 255,  0.7)
+      color: #000
+   &-results
+      &__options
+         //Вся полоса прокрутки
+         &::-webkit-scrollbar 
+            width: 7px
+            background-color: #fff
+         //Двигающаяся полоса прокрутки
+         &::-webkit-scrollbar-thumb
+            width: 7px
+            border-radius: 4px
+            background-color: #000
+      /*Изменение цвета текста у выпадающего списка*/
+      &__option
+         color: #000
+      
+   &-search
+      &--inline
+         line-height: 56px !important
+   &-selection
+      &__rendered 
+         padding-left: 14px !important
+      //Фоновый цвет у области и граница
+      &--multiple
+         background-color: rgba(255, 255, 255,  0.16) !important
+         border: none !important
+      &__choice
+         float: none !important
+         background: none !important
+         border: 0px !important
+         //line-height: 56px !important
+         &__remove
+            display: none !important 
+   &-container 
+      & *:focus
+         outline: none
+      //&--focus
+         //border: none !important
+      //&--default
+         //background-color: rgba(255, 255, 255,  0.16) !important
+
+@media ( max-width: 768px )
+   .footer
+      padding-top: 25px
+      padding-bottom: 24px
+      &__form
+         display: block
+         padding-left: 13px
+         padding-right: 13px
+      &__btn
+         display: none
+      &__filters
+         display: none
+      &__complex
+         display: none
+      &__cost
+         display: none
+      &__square
+         display: none
+      &__quantity
+         display: none
+      &__search
+         display: block

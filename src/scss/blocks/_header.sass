@@ -1,0 +1,94 @@
+.header
+   padding-top: 34px
+   padding-bottom: 34px
+   &__logo
+      align-self: center
+   &__contacts
+      align-self: center
+   &__phone
+      margin: 0
+      font-size: 20px
+      font-family: 'Core Sans C', sans-serif
+      font-weight: 500
+   &__chart
+      margin: 0
+      margin-top: 6px
+      font-size: 16px
+      font-family: 'Core Sans C', sans-serif
+      font-weight: 400
+      color: rgba(#fff,0.5)
+
+   &__navbar
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__links
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+   &__link
+      margin-bottom: 6px
+      text-decoration: none
+      font-size: 16px
+      font-family: 'Core Sans C', sans-serif
+      font-weight: 500
+      text-align: center
+      &:hover
+         color: #ccc
+         animation-duration: calc(var(--animate-duration) * 0.75)
+         animation-name: flipOutX
+         backface-visibility: visible !important
+      &:nth-child(n+2)
+         margin-left: 20px
+   &__vector
+      position: relative
+      margin-left: 38px
+      width: 48px
+      height: 10px
+      border-top: 1px solid #fff
+      border-bottom: 1px solid #fff
+   &__icon
+      display: none
+
+  
+@keyframes flipOutX 
+   from 
+      transform: perspective(400px)
+   30% 
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg)
+      opacity: 1
+   to 
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg)
+      opacity: 0
+
+
+@media ( max-width: 1642px )
+   .header
+      &__link
+         margin-left: 10px
+         margin-right: 10px
+         &:nth-child(n+2)
+            margin-left: 0px
+
+@media ( max-width: 1020px )
+   .header
+      &__links
+         flex-direction: column
+         justify-content: center
+         align-items: center
+      &__link
+         margin-left: 0
+         margin-right: 0
+
+@media ( max-width: 768px )
+   .header
+      &__contacts
+         display: none
+      &__links
+         display: none
+      &__icon
+         display: block
+      &__navbar
+         justify-content: flex-end
+      &__vector
+         margin-left: 24px

@@ -1,0 +1,241 @@
+.main
+   position: relative
+   margin-top: 88px
+   &__logo
+      position: absolute
+      top: 0
+      left: 0
+   &__logo2
+      display: none
+   &__socials
+      padding-top: 188px
+      & a
+         display: block
+         &:nth-child(n+2)
+            margin-top: 30px
+   &__locations
+      position: relative
+      padding-bottom: 458px
+   &__location
+      position: relative
+      display: inline-block
+      cursor: pointer
+      margin: 0
+      font-size: 16px
+      font-family: 'Core Sans C',sans-serif
+      font-weight: 500
+      line-height: 19px
+      color: rgba(255, 255, 255, 0.6)
+      &::before
+         content: ''
+         position: absolute
+         bottom: 0
+         left: 0
+         width: 100%
+         height: 1px
+         background-color: rgba(255, 255, 255, 0.6)
+      &:hover
+         color: #fff 
+         & .main__location::before
+            background-color: #fff 
+      &:nth-child(n+2)
+         margin-top: 11px
+   &__description
+      position: absolute
+      margin-top: 23px
+   &__image
+      border-radius: 10px
+      width: 100%
+   &__name
+      margin: 0
+      margin-top: 17px
+      font-size: 16px
+      font-weight: 500
+   &__advantages
+      margin: 0
+      margin-top: 9px
+      color: rgba(#fff, 0.5)
+      font-size: 16px
+      font-weight: 400
+   &__arrows
+      display: flex
+      justify-content: flex-end
+   &__arrow
+      &-left
+         position: relative
+         cursor: pointer
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 39px
+         height: 39px
+         border-radius: 50%
+         &:active
+            background-color: rgba(255,255 ,255 ,0.3)
+      &-right
+         position: relative
+         cursor: pointer
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 39px
+         height: 39px
+         border-radius: 50%
+         &:active
+            background-color: rgba(255,255 ,255 ,0.3)
+         & img
+            position: absolute
+            transform: rotate(180deg)
+   &__title
+      position: relative
+      top: -7px
+      margin: 0 
+      font-size: 40px
+      font-weight: 400
+      line-height: 47px
+      letter-spacing: -2%
+   &__buttons
+      margin-top: 50px
+      display: flex
+      flex-wrap: wrap
+   &__btn
+      box-sizing: content-box
+      position: relative
+      cursor: pointer
+      outline: none
+      border: 1px solid #fff
+      border-radius: 7px
+      background: transparent
+      width: 208px
+      height: 54px
+      transition: all 1s
+      &:hover
+         background-color: #fff
+         border-top: 28px solid #fff
+         border-bottom: 28px solid #fff
+         border-left: 105px solid #fff
+         border-right: 105px solid #fff
+         width: 0px
+         height: 0px
+         & .main__btn-wrap
+            top: -27px
+            left: -104px
+         & .main__btn-text
+            color: #000
+         & .main__btn-plus
+            &::before
+               background-color: #000
+            &::after
+               background-color: #000
+      &-wrap
+         box-sizing: border-box
+         position: absolute
+         top: 0
+         left: 0
+         display: flex
+         align-items: center
+         justify-content: start
+         padding-left: 14px
+         width: 210px
+         height: 56px
+         transition: all 1s
+      &-text
+         margin: 0
+         margin-left: 10px
+         font-size: 16px
+         text-align: left
+         transition: all 1s
+         font-weight: 500
+      &-plus
+         position: relative
+         width: 11px
+         height: 11px
+         &::before
+            position: absolute
+            top: 5.15px
+            left: 0px
+            content: ''
+            width: 11px
+            height: 0.7px
+            background-color: #fff
+            transition: all 1s
+         &::after
+            position: absolute
+            top: 0
+            left: 5.15px
+            content: ''
+            width: 0.7px
+            height: 11px
+            background-color: #fff
+            transition: all 1s
+   &__online
+      display: flex
+      align-items: center
+      justify-content: start
+      margin-left: 30px
+      text-decoration: none
+      &-text
+         margin: 0
+         font-weight: 500
+         font-size: 16px
+      &-arrow
+         margin-left: 5px
+      
+   
+@media ( max-width: 1380px )
+   .main
+      &__title
+         font-size: 36px
+      &__buttons
+         flex-direction: column
+         align-items: start
+         justify-content: center
+      &__online
+         margin-left: 0
+         margin-top: 30px
+
+@media ( max-width: 1100px )
+   .main
+      &__title
+         font-size: 32px
+   
+@media ( max-width: 992px )
+   .main
+      &__locations
+         display: none
+
+@media ( max-width: 768px )
+   .main
+      margin-top: 30px
+      margin-bottom: 99px
+      &__logo
+         display: none
+      &__logo2
+         display: block
+         position: absolute
+         right: 0
+         bottom: 0
+      &__socials
+         display: none
+      &__arrows
+         display: none
+      &__title
+         font-size: 26px
+         font-weight: 400
+         line-height: 31px
+      &__buttons
+         margin-top: 32px
+         margin-bottom: 84px
+      &__btn
+         width: 152px
+         height: 38px
+         &-wrap
+            width: 154px
+            height: 40px
+            padding-left: 10px
+         &-text
+            margin-left: 7px
+            font-size: 12px
+      &__online
+         &-text
+            font-size: 12px

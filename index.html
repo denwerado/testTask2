@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Тестовое задание</title><!--Нормализаия стилей--><link rel="stylesheet" href="./css/normalize.css"><!--Стили для слайдера--><link rel="stylesheet" href="./css/owl.theme.default.min.css"><link rel="stylesheet" href="./css/owl.carousel.min.css"><!--Подключение библиотеки анимации--><link rel="stylesheet" href="./css/animate.min.css"><!--Подключение стилей для ползунка--><link rel="stylesheet" href="./css/jquery-ui.css"><!--Подключение стилей для выпадающего списка--><link rel="stylesheet" href="./css/select2.css"><!--Подключение пользовательских стилей--><link rel="stylesheet" href="./css/style.css"></head><body><div id="app"><div class="owl-carousel video__slider"><video class="video__item" preload="auto" autoplay="true" loop="true" muted="muted"><source src="./image/Puppies.mp4" type="video/mp4"></video><video class="video__item" preload="auto" autoplay="true" loop="true" muted="muted"><source src="./image/Flowers.mp4" type="video/mp4"></video></div><!--Верстаю с помощью Bootstrap:)--><header class="header"><div class="container"><div class="row"><div class="col-md-1 col-4 owl-carousel logo__slider"><img class="header__logo" src="./image/logo1.svg" alt=""> <img class="header__logo" src="./image/logo2.svg" alt=""></div><div class="col-2 offset-md-1 header__contacts"><p class="header__phone">8 800 222-37-90</p><p class="header__chart">Работаем ежедневно с 10:00 до 20:00</p></div><!-- /.header__contacts --><div class="col-md-3 col-4 offset-md-1"><div class="header__navbar"><div class="header__links"><a href="#" class="header__link">Квартиры</a> <a href="#" class="header__link">Ипотека</a> <a href="#" class="header__link">Коммерция</a> <a href="#" class="header__link">Управляющая компания</a></div><!-- /.header__links --> <a href="tel:88002223790"><img src="./image/icon__phone.png" alt="Телефон" class="header__icon"></a><div class="header__vector"></div></div><!-- /.header__navbar --></div></div><!-- /.row --></div><!-- /.container --></header><!-- /.header --><main class="main"><img src="./image/main__logo.png" alt="" class="main__logo"> <img src="./image/main__logo2.svg" alt="" class="main__logo2"><div class="container"><div class="row"><section class="col-1 main__socials"><a href="https://ru-ru.facebook.com/"><img src="./image/facebook_icon.svg" alt="Facebook" class="main__social"></a><a href="https://www.instagram.com/"><img src="./image/instagram_icon.svg" alt="Instagram" class="main__social"></a><a href="https://twitter.com/?lang=ru"><img src="./image/twitter_icon.svg" alt="Twitter" class="main__social"></a><a href="https://vk.com/"><img src="./image/vk_icon.svg" alt="Vk" class="main__social-img"></a></section><section class="col-2 offset-md-1 main__locations"><div class="row"><div class="col-4"><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Северный парк</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Станция столичная</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Лето</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Сказочный сад</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Краски</p></div><div class="col-4"><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Северный парк</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Станция столичная</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Лето</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Сказочный сад</p><p class="main__location" v-on:mouseover="overDescription" v-on:mouseout="outDescription">Краски</p></div></div><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Северный парк</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Станция столичная</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Лето</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Сказочный сад</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Краски</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Северный парк</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Станция столичная</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Лето</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Сказочный сад</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --><div class="main__description"><img src="./image/northPark.jpg" alt="" class="main__image"><p class="main__name">Краски</p><p class="main__advantages">Жилой комплекс небывалого масштаба с развитой инфраструктурой</p></div><!-- /.main__description --></section><!-- /.main__locations --><section class="col-1 offset-lg-0 offset-md-1 main__arrows"><div class="main__arrow-left"><img class="left" src="./image/arrow.svg" alt=""></div><div class="main__arrow-right"><img class="right" src="./image/arrow.svg" alt=""></div></section><!-- /.main__arrows --><section class="col-8 col-lg-3 col-md-5 main__choice"><div class="owl-carousel main__slider"><div><h1 class="main__title">Стильная архитектура и виды из окон будущей квартиры не оставят равнодушных</h1></div><div class="div"><h1 class="main__title">Большие парковые территории и безопасные дворы созданы для счастливой жизни</h1></div></div><!-- /.main__slider --><div class="main__buttons"><button class="main__btn"><div class="main__btn-wrap"><div class="main__btn-plus"></div><p class="main__btn-text">Выбрать квартиру</p></div></button> <a href="#" class="main__online"><p class="main__online-text">Купить квартиру онлайн</p><img src="./image/arrow2.svg" class="main__online-arrow"></a></div><!-- /.main__buttons --></section><!-- /.main__choice --></div><!-- /.row --></div><!-- /.container --></main><!-- /.main --><footer class="footer"><div class="container"><form action="#" method="POST" class="footer__form"><div class="footer__quantity"><p class="footer__decription">Количество комнат</p><div class="footer__quantity-block"><div class="footer__quantity-btn"><input id="radio-1" type="radio" name="radio" value="atelier" checked="checked"> <label for="radio-1">Студия</label></div><div class="footer__quantity-btn"><input id="radio-2" type="radio" name="radio" value="1"> <label for="radio-2">1</label></div><div class="footer__quantity-btn"><input id="radio-3" type="radio" name="radio" value="2"> <label for="radio-3">2</label></div><div class="footer__quantity-btn"><input id="radio-4" type="radio" name="radio" value="3"> <label for="radio-4">3</label></div><div class="footer__quantity-btn"><input id="radio-5" type="radio" name="radio" value="4"> <label for="radio-5">4</label></div></div><!-- /.footer__radio --></div><!-- /.footer__quantity --><div class="footer__square"><p class="footer__decription">Площадь</p><div class="footer__square-block"><div class="footer__wrap"><span>от</span> <input type="text" id="square1" name="square1" class="footer__square-input footer__input"></div><!-- /.footer__square-wrap --><div class="footer__wrap"><span>до</span> <input type="text" id="square2" name="square2" class="footer__square-input footer__input"></div></div><!-- /.footer__square-block --><div class="footer__range"><div id="range1"></div></div><!-- /.footer__range --></div><!-- /.footer__square --><div class="footer__cost"><p class="footer__decription">Стоимость, млн ₽</p><div class="footer__cost-block"><div class="footer__wrap"><span>от</span> <input type="text" id="square3" name="square3" class="footer__cost-input footer__input"></div><!-- /.footer__square-wrap --><div class="footer__wrap"><span>до</span> <input type="text" id="square4" name="square4" class="footer__cost-input footer__input"></div></div><!-- /.footer__square-block --><div class="footer__range"><div id="range2"></div></div><!-- /.footer__range --></div><div class="footer__complex"><p class="footer__decription">Жилой комплекс</p><div class="footer__complex-block"><label for="id_label_multiple" class="footer__selects"><img class="footer__img" src="./image/arrow.png" alt=""> <select class="js-example-basic-multiple js-states form-control check__select" name="states[]" id="id_label_multiple1" multiple="multiple" style="width: 100%;"><option></option><option value="Северный парк">Северный парк</option><option value="Станция столичная">Станция столичная</option><option value="Лето">Лето</option><option value="Сказочный сад">Сказочный сад</option><option value="Краски">Краски</option><option value="Северный парк">Северный парк</option><option value="Станция столичная">Станция столичная</option><option value="Лето">Лето</option><option value="Сказочный сад">Сказочный сад</option><option value="Краски">Краски</option></select></label></div><!-- /.footer__complex-block --></div><!-- /.footer__complex --> <a href="#" class="footer__filters"><img src="./image/filter.svg" alt="Фильтры"> <span>Еще фильтры</span> </a><button class="footer__btn">Показать 120 квартир</button><div class="footer__search"><input type="text" class="footer__search-input" placeholder="Подобрать квартиру"> <button class="footer__search-button"><img src="./image/magnifier.svg" alt=""></button></div></form></div><!-- /.container --></footer><!-- /.footer --></div><!-- /#app --><!--Подключение jQuery--><script src="./scripts/jquery-3.6.0.min.js"></script><!--Подключение скрипта для слайдеров--><script src="./scripts/owl.carousel.min.js"></script><!--Подключение скрипта для ползунка--><script src="./scripts/jquery-ui.min.js"></script><!--Подключение скрипты для выпадающего списка--><script src="./scripts/select2.min.js"></script><script src="./scripts/bundl.js"></script><script>$(document).ready(function(){
+         $('#id_label_multiple1').select2({
+            placeholder: 'Выберите жилой комплекс',
+         });
+
+         //!*!*Работа со слайдером
+         //Первичная инициализация анимации
+         var nextAnimaton = '';
+         var prevAnimation = '';
+
+         var owl1 = $('.video__slider');
+         var owl2 = $('.main__slider');
+         var owl3 = $('.logo__slider');
+
+         owl1.owlCarousel({
+            //Один отображаемый элемент
+            items: 1,
+            //Включение зацикливания
+            loop: true,
+            //Отключение передвижения мышью
+            mouseDrag: false,
+            //Отключение точек
+            dots: false,
+            smartSpeed: 1000,
+            //animateIn: nextAnimaton,
+            //animateOut: prevAnimation,
+         });
+
+         owl2.owlCarousel({
+            //Один отображаемый элемент
+            items: 1,
+            //Включение зацикливания
+            loop: true,
+            //Отключение передвижения мышью
+            mouseDrag: false,
+            //Отключение точек
+            dots: false,
+            smartSpeed: 1000,
+            //animateIn: nextAnimaton,
+            //animateOut: prevAnimation,
+         });
+
+         owl3.owlCarousel({
+            //Один отображаемый элемент
+            items: 1,
+            //Включение зацикливания
+            loop: true,
+            //Отключение передвижения мышью
+            mouseDrag: false,
+            //Отключение точек
+            dots: false,
+            smartSpeed: 1000,
+            //animateIn: nextAnimaton,
+            //animateOut: prevAnimation,
+         });
+
+         //Перелистывание при клике на правую стрелку
+         $('.main__arrow-right').click(function() {
+            nextAnimaton = 'animate__slideInRight';
+            prevAnimation = 'animate__fadeOut';
+            owl1.data('owl.carousel').options.animateIn = nextAnimaton ;
+            owl1.data('owl.carousel').options.animateOut = prevAnimation;
+            owl2.data('owl.carousel').options.animateIn = 'animate__fadeIn' ;
+            owl2.data('owl.carousel').options.animateOut = prevAnimation;
+            owl3.data('owl.carousel').options.animateIn = 'animate__fadeIn' ;
+            owl3.data('owl.carousel').options.animateOut = prevAnimation;
+
+            owl1.trigger('refresh.owl.carousel');
+            owl2.trigger('refresh.owl.carousel');
+            owl3.trigger('refresh.owl.carousel');
+
+            owl1.trigger('next.owl.carousel');
+            owl2.trigger('next.owl.carousel');
+            owl3.trigger('next.owl.carousel');
+         });
+
+         //Перелистывание при клике на левую стрелку
+         $('.main__arrow-left').click(function() {
+            nextAnimaton = 'animate__slideInLeft';
+            prevAnimation = 'animate__fadeOut';
+            owl1.data('owl.carousel').options.animateIn = nextAnimaton ;
+            owl1.data('owl.carousel').options.animateOut = prevAnimation;
+            owl2.data('owl.carousel').options.animateIn = 'animate__fadeIn' ;
+            owl2.data('owl.carousel').options.animateOut = prevAnimation;
+            owl3.data('owl.carousel').options.animateIn = 'animate__fadeIn' ;
+            owl3.data('owl.carousel').options.animateOut = prevAnimation;
+
+            owl1.trigger('refresh.owl.carousel');
+            owl2.trigger('refresh.owl.carousel');
+            owl3.trigger('refresh.owl.carousel');
+
+            owl1.trigger('prev.owl.carousel');
+            owl2.trigger('prev.owl.carousel');
+            owl3.trigger('prev.owl.carousel');
+         });
+
+
+         //!*!*Работа с rangle
+         $(function() {
+            $('#range1').slider({
+               //Изначальный диапазон
+               values: [32, 186],
+               //Диапазон range
+               min: 32,
+               max: 186,
+               range: true,
+               create: displaySliderValues1,
+               slide: displaySliderValues1
+            });
+
+            $('#range2').slider({
+               //Изначальный диапазон
+               values: [1.5, 17.5],
+               //Диапазон range
+               min: 1.5,
+               max: 17.5,
+               range: true,
+               create: displaySliderValues2,
+               slide: displaySliderValues2
+            });
+
+            function displaySliderValues1() {
+               $('#square1').val($('#range1').slider("values", 0) + ' м^2');
+               $('#square2').val($('#range1').slider("values", 1) + ' м^2');
+            }
+
+            function displaySliderValues2() {
+               $('#square3').val($('#range2').slider("values", 0));
+               $('#square4').val($('#range2').slider("values", 1));
+            }
+
+            $('.footer__square-input').change(function(e) {
+                switch (this.id) {
+                    case "square1":
+                    case "square2":
+                        var index = (this.id == "square2") ? 1 : 0;
+                        $('#range1').slider("values", index, $(this).val())
+                        break;
+                }
+            });
+
+            $('.footer__cost-input ').change(function(e) {
+                switch (this.id) {
+                    case "square3":
+                    case "square4":
+                        var index = (this.id == "square4") ? 1 : 0;
+                        $('#range2').slider("values", index, $(this).val())
+                        break;
+                }
+            });
+
+         });
+      });</script></body></html>
